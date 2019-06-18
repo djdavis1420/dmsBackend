@@ -1,7 +1,10 @@
 package com.models;
 
+import java.util.UUID;
+
 public class Donor {
 
+    private UUID donorID;
     private String firstName;
     private String lastName;
     private String email;
@@ -12,6 +15,14 @@ public class Donor {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
+    }
+
+    public UUID getDonorID() {
+        return donorID;
+    }
+
+    public void setDonorID(UUID donorID) {
+        this.donorID = donorID;
     }
 
     public String getFirstName() {
